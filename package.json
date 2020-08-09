@@ -4,18 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.1"
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "live-server": "^1.2.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-modal": "^3.11.2",
+    "validator": "8.0.0",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
   }
 }
